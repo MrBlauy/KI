@@ -244,19 +244,12 @@ if __name__ == "__main__":
                     time_string = time.strftime("%I:%M %p", named_tuple)
 
                     speak(("It is", time_string))
-
-                elif "change my name to" in query:
-                    query = query.replace("change my name to", "")
-                    assname = query
-
+                    
                 elif "change name" in query:
                     speak("What would you like to call me, Sir ")
                     assname = takeCommand()
                     speak("Thanks for naming me")
-
-                elif "what's your name" in query or "What is your name" in query:
-                    speak(f"My friends call me {assname}")
-
+                    
                 elif "calculate" in query:
                     app_id = "85T9L6-P8T935LXE2"
                     client = wolframalpha.Client(app_id)
@@ -280,9 +273,6 @@ if __name__ == "__main__":
                         speak(next(res.results).text)
                     except StopIteration:
                         print("No results")
-
-                elif "wikipedia" in query:
-                    webbrowser.open("wikipedia.com")
 
                 elif "restart" in query:
                     subprocess.call(["shutdown", "/r"])
