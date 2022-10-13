@@ -43,4 +43,4 @@ Liste Aller FUnktionen(Stand 13.10.2022):
 -sprachaufnahmen in recorded.wav machen mit "record"
 
 
-Ihr könnt gerne weitere SChlüsselwörter hinzufügen oder andere Befehle einbauen.
+Ihr könnt gerne weitere SChlüsselwörter hinzufügen oder andere Befehle einbauen. Der name der KI kann mit der Variable assname geändert werden so wie das Wake word mit der WAKE variable
