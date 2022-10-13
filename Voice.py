@@ -251,7 +251,7 @@ if __name__ == "__main__":
                     speak("Thanks for naming me")
                     
                 elif "calculate" in query:
-                    app_id = "85T9L6-P8T935LXE2"
+                    app_id = "API ID" #same API KEY as below at what is or who is
                     client = wolframalpha.Client(app_id)
                     indx = query.lower().split().index('calculate')
                     query = query.split()[indx + 1:]
@@ -265,7 +265,7 @@ if __name__ == "__main__":
                     webbrowser.open(query)
 
                 elif "what is" in query or "who is" in query:
-                    client = wolframalpha.Client("85T9L6-P8T935LXE2")
+                    client = wolframalpha.Client("API KEY")
                     res = client.query(query)
 
                     try:
@@ -334,7 +334,7 @@ if __name__ == "__main__":
                     timer(query)
 
                 elif "weather" in query:
-                    city = "dresden"
+                    city = "citi name"
                     url = 'https://wttr.in/{}'.format(city)
                     result = requests.get(url)
 
